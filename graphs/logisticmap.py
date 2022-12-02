@@ -22,7 +22,7 @@ for year in range(iterations):
   
 
 plt.plot(years,percentages)
-plt.ylabel('theoretical population %')
+plt.ylabel('Value%')
 plt.xlabel('Year')
 plt.title(f"Percentage graph for {iterations} years if initial_percentage = {init_percentage*100}% and Growth Rate = {rate}")
 plt.show()
