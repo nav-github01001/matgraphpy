@@ -5,23 +5,23 @@ init_percentage= .7
 rate = 3.8
 iterations = 50
 # You should not adjust these settings
-x = []
-y = []
+years = []
+percentages = []
 for year in range(iterations):
-    x.append(year)
+    years.append(year)
     if year==0:
         percentage = init_percentage
     elif year==1:
         percentage = rate*init_percentage*(1-init_percentage)
     else:
-        percentage = rate*y[-1]*(1-y[-1])
+        percentage = rate*percentages[-1]*(1-percentages[-1])
 
-    y.append(percentage)
+    percentages.append(percentage)
     print(f"{year} - {percentage*100}%")
 
   
 
-plt.plot(x,y)
+plt.plot(years,percentages)
 plt.ylabel('theoretical population %')
 plt.xlabel('Year')
 plt.show()
