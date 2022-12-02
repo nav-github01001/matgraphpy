@@ -17,7 +17,7 @@ plot.title('cosine wave')
 plot.xlabel('Time')
 
 # Give y axis label for the cosine wave plot
-plot.ylabel('Amplitude = sin(time)')
+plot.ylabel('Amplitude = cos(time)')
 plot.grid(True, which='both')
 plot.axhline(y=0, color='k')
 
