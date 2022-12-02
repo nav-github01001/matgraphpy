@@ -7,7 +7,7 @@ iterations = 50
 # You should not adjust these settings
 years = []
 percentages = []
-for year in range(iterations):
+for year in range(iterations+1):
     years.append(year)
     if year==0:
         percentage = init_percentage
@@ -24,5 +24,5 @@ for year in range(iterations):
 plt.plot(years,percentages)
 plt.ylabel('Value%')
 plt.xlabel('Year')
-plt.title(f"Percentage graph for {iterations} years if initial_percentage = {init_percentage*100}% and Growth Rate = {rate}")
+plt.title(f"Percentage graph for {iterations} years \nif initial_percentage = {init_percentage*100}% and Growth Rate = {rate}")
 plt.show()
