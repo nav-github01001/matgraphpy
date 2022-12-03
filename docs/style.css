@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#headbar {
+    background-image: linear-gradient(to bottom right, rgb(0, 170, 255), aqua);
+}
+
+body a{
+	text-decoration: none;
+}
+
+nav{
+	text-align: right;
+	flex: 1;
+}
+
+nav ul{
+	list-style-type: none;
+}
+
+nav ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav ul li a:hover{
+	color: yellowgreen;
+	font-weight: bold;
+	font-size: 25px;
+}
