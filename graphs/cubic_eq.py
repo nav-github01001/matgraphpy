@@ -5,8 +5,7 @@ x = np.linspace(-5,5,100)
 
 y = x**3
 
-fig = plt.figure()
-figure.add_subplot(1,1,1) = fig.add_subplot(1, 1, 1)
+figure = plt.figure()
 figure.add_subplot(1,1,1).spines['left'].set_position('center')
 figure.add_subplot(1,1,1).spines['bottom'].set_position('center')
 figure.add_subplot(1,1,1).spines['right'].set_color('none')

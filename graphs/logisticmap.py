@@ -11,8 +11,7 @@ for year in range(iterations+1):
     years.append(year)
     if year==0:
         percentage = init_percentage
-    elif year==1:
-        percentage = rate*init_percentage*(1-init_percentage)
+
     else:
         percentage = rate*percentages[-1]*(1-percentages[-1])
 
